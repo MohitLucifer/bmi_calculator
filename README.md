@@ -2,6 +2,9 @@
 
 This is a simple BMI calculator app built with Flutter. It allows users to input their height and weight, and calculates their BMI based on the standard BMI formula.
 
+## App Video
+https://user-images.githubusercontent.com/104638885/229244029-1a676ad2-7d96-4a71-a9f1-b24fc0383c78.mp4
+
 ## Installation
 To install and run the app on your device or emulator, follow these steps:
 
