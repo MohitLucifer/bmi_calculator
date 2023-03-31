@@ -20,65 +20,67 @@ class _AgeScreenState extends State<AgeScreen> {
       appBar: AppBar(
         title: const Text(
           'BMI Calculator',
-          style: TextStyle(fontSize: 15),
+          style: TextStyle(fontSize: 20),
         ),
         centerTitle: true,
         elevation: 0,
       ),
-      body: Column(
-        children: [
-          TextContainer(size: size, text: 'I am'),
-          SizedBox(height: size.height * 0.15),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: size.width * 0.3,
-                height: size.height * 0.1,
-                child: TextField(
-                  controller: ageController,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                    border: const UnderlineInputBorder(),
-                    focusedBorder: UnderlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Colors.green.withOpacity(0.5)),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            TextContainer(size: size, text: 'I am'),
+            SizedBox(height: size.height * 0.15),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  width: size.width * 0.3,
+                  height: size.height * 0.1,
+                  child: TextField(
+                    controller: ageController,
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      border: const UnderlineInputBorder(),
+                      focusedBorder: UnderlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Colors.green.withOpacity(0.5)),
+                      ),
+                      disabledBorder: UnderlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Colors.green.withOpacity(0.5)),
+                      ),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Colors.green.withOpacity(0.5)),
+                      ),
+                      contentPadding: const EdgeInsets.only(top: 20),
                     ),
-                    disabledBorder: UnderlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Colors.green.withOpacity(0.5)),
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF00BB6E),
                     ),
-                    enabledBorder: UnderlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Colors.green.withOpacity(0.5)),
-                    ),
-                    contentPadding: const EdgeInsets.only(top: 20),
+                    onChanged: (value) {
+                      setState(() {});
+                    },
                   ),
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
+                  // child:
+                ),
+                const Text(
+                  '  years old.   ',
+                  style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.w500,
                     color: Color(0xFF00BB6E),
                   ),
-                  onChanged: (value) {
-                    setState(() {});
-                  },
                 ),
-                // child:
-              ),
-              const Text(
-                '  years old.   ',
-                style: TextStyle(
-                  fontSize: 40,
-                  fontWeight: FontWeight.w500,
-                  color: Color(0xFF00BB6E),
-                ),
-              ),
-            ],
-          ),
-          SizedBox(height: size.height * 0.16),
-          NextButton(size: size, screen: const HWScreen())
-        ],
+              ],
+            ),
+            SizedBox(height: size.height * 0.16),
+            NextButton(size: size, screen: const HWScreen())
+          ],
+        ),
       ),
     );
   }

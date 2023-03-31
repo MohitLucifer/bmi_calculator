@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text(
           'BMI Calculator',
-          style: TextStyle(fontSize: 15),
+          style: TextStyle(fontSize: 20),
         ),
         centerTitle: true,
         elevation: 0,
@@ -65,6 +65,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       materialTapTargetSize: MaterialTapTargetSize.padded,
                     ),
                   ),
+                  const Text(
+                    'Male',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF00BB6E),
+                    ),
+                  ),
                 ],
               ),
               Column(
@@ -97,11 +105,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       materialTapTargetSize: MaterialTapTargetSize.padded,
                     ),
                   ),
+                  const Text(
+                    'Female',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF00BB6E),
+                    ),
+                  ),
                 ],
               ),
             ],
           ),
-          SizedBox(height: size.height * 0.2),
+          SizedBox(height: size.height * 0.16),
           NextButton(size: size, screen: const AgeScreen()),
         ],
       ),
