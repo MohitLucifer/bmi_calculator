@@ -8,7 +8,8 @@ https://user-images.githubusercontent.com/104638885/229244029-1a676ad2-7d96-4a71
 ## Installation
 To install and run the app on your device or emulator, follow these steps:
 
-Clone the repository to your local machine: git clone 
+Clone the repository to your local machine: git clone\
+https://github.com/AhmadMaazz/BMI-Calculator-App.git
 Open the project in your preferred code editor.
 Run flutter pub get to install the app dependencies.
 Run the app using flutter run.
@@ -32,8 +33,8 @@ See your BMI category and a corresponding health message.
 If you would like to contribute to the project, please fork the repository and create a pull request with your changes.
 
 ## Design Credits
-The design of the app was inspired by Simin Liu on Dribbble.
-Design name: Daily UI 004-BMI Calculator
+The design of the app was inspired by Simin Liu on Dribbble.\
+Design name: Daily UI 004-BMI Calculator\
 Design link: https://dribbble.com/shots/6685570-Daily-UI-004-BMI-Calculator
 
 
