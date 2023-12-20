@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/104638885/229244029-1a676ad2-7d96-4a71
 To install and run the app on your device or emulator, follow these steps:
 
 Clone the repository to your local machine: git clone\
-https://github.com/MohitLucifer/bmi_calculator\
+https://github.com/MohitLucifer/bmi_calculator
 Open the project in your preferred code editor.\
 Run flutter pub get to install the app dependencies.\
 Run the app using flutter run.
